@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css" crossorigin="anonymous">
+    <script type="text/javascript" src="popup.js"></script>
+</head>
+
+<body>
+    <div class="modal-header">
+        <h1 class="logo">
+            <img class="logo-icon" src="images/tinydesk-logo.png" alt="CommandT Logo" />
+        </h1>
+    </div>
+    <div class="container" id="content-row">
+        <div class="row">
+            <div class="col-2" id="content-text">URL</div>
+            <div class="col-10">
+                <div class="mb-3">
+                    <input class="form-control form-control-sm" type="text" id="url-input">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2" id="content-text">Title</div>
+            <div class="col-10">
+                <div class="mb-3">
+                    <input class="form-control form-control-sm" type="text" id="title-input">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2" id="content-text">Color</div>
+
+            <div class="col-10" style="display: flex; justify-content: flex-end;">
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example"
+                    style="width: 100px; height: 30px" id="color-select">
+
+                    <option value="clear">clear</option>
+                    <option value="green">green</option>
+                    <option value="yellow">yellow</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="blue">blue</option>
+                    <option value="purple">purple</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <button type="button" class="btn btn-primary" id="save-btn">Save</button>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
